@@ -1,9 +1,9 @@
-variable "name" {
+variable "user_name" {
   default = "vinnietestuser"
  }
 
 resource "aws_iam_user" "u" {
-  name          = "${var.name}"
+  name          = "${var.user_name}"
   path          = "/"
   force_destroy = true
 }
